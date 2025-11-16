@@ -14,12 +14,9 @@ class Redis_Client():
     def __init__(self):
         self.redis = None
     
-    """
-    Connect to redis with "host", "port", "db", "username" and "password".
-    """
+
     def connect(self):
         try:
-            # TODO: Replace with your actual Redis Cloud credentials
             self.redis = redis.Redis(
                 host='redis-10265.c98.us-east-1-4.ec2.redns.redis-cloud.com',
                 port=10265,
@@ -429,4 +426,5 @@ if __name__ == "__main__":
     rs.query2(2836)
     rs.query3()
     rs.query4()
+
     rs.query5()
